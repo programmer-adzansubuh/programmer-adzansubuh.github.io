@@ -1,0 +1,463 @@
+
+@font-face {
+    font-family: Maven Pro;
+    src: url(../font/MavenPro-Black.ttf);
+    font-weight:900;
+}
+
+@font-face {
+    font-family: Maven Pro;
+    src: url(../font/MavenPro-Bold.ttf);
+    font-weight:700;
+}
+
+@font-face {
+    font-family: Maven Pro;
+    src: url(../font/MavenPro-Medium.ttf);
+    font-weight:500;
+}
+
+@font-face {
+    font-family: Maven Pro;
+    src: url(../font/MavenPro-Regular.ttf);
+    font-weight:400;
+}
+
+
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family: 'Maven Pro', sans-serif;
+  }
+
+
+.container{
+    padding: 0;
+}
+
+.content {
+    display: block;
+    padding-left: 75px;
+    padding-right: 75px;
+    font-size:20px
+}  
+  
+#navbar {
+    background-color: #FFFFFF;
+    color: #5D5C5C;
+    position: fixed;
+    top: -70px;
+    width: 100%;
+    display:block;
+    transition: top 0.3s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+#navbar-content{
+    display: block;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-right: 15px;
+}
+
+#navbar img {
+    float: left;
+    height: 33px;
+    padding: 15px;
+}
+
+#navbar a {
+    float: right;
+    display: block;
+    color: #3F3F3F;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar a:hover {
+    transition: 0.3s;
+    color: #000;
+}
+
+.cool-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    line-height: 2.1;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #D7D7D7;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    background: rgb(236, 236, 236);
+    transition: width .3s;
+}
+
+/* navbar home */
+
+#navbar-home {
+    color: rgb(240, 240, 240);
+    width: 100%;
+    display: inline;
+}
+
+#navbar-home img {
+    float: left;
+    height: 33px;
+    padding: 15px 15px 15px 15px ;
+    margin: 40px 60px ;
+}
+
+#menu-home {
+    margin-right: 75px;
+}
+
+#navbar-home a {
+    float: right;
+    color: rgb(243, 243, 243);
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+    margin-top: 45px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar-home a:hover {
+    transition: 0.3s;
+    color: #000;
+}
+
+.cool-link-home {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    line-height: 2.1;
+}
+
+.cool-link-home::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #D7D7D7;
+    transition: width .3s;
+}
+
+.cool-link-home:hover::after {
+    width: 100%;
+    background: #000;
+    transition: width .3s;
+}
+
+/* header */
+
+#header{
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    display: inline-block;
+    height: 400px;
+    top: 0;
+}
+
+.parallax-window {
+    background: transparent;
+    height: 250px;
+}
+
+.content-center {
+    text-align: center;
+}
+
+/* //// */
+
+header {
+    display: flex;
+    align-items: center;
+  }
+  
+  @media (min-width: 700px) {
+   .leading {
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  /* Grid styles -------------------------------------------------*/
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
+  }
+  
+  .cards {
+    max-width: 960px;
+    margin: 0 auto 30px;
+    left: 0;
+    right: 0;
+    text-align: center
+  }
+  
+  .article-card {
+    height: 300px;
+    width: 300px;
+    /* object-fit: cover; */
+    background-color: white;
+    border-radius: 15px;
+    webkit-box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+    position: relative;
+    margin:auto;
+    display: block;
+  }
+
+  .article-card:hover {
+    webkit-box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+  }
+
+  .article-img {
+    height: 130px;
+    width: 130px;
+    align-items: center;
+    margin: auto;
+    margin-top: 85px;
+  }
+
+  #aplikasi-android{
+    background: white; 
+    width: 100%; 
+    height: auto;
+    padding-bottom: 190px;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  #content-apilasi-android #text{
+      padding-left: 120px;
+      display: -webkit-inline-box;
+      display: inline-block;
+      width: 50%;
+      text-align: justify;
+  }
+
+#content-apilasi-android #phone{
+      display: block;
+      float: right;
+      height: 502px;
+      width: 267px;
+      margin-right: 120px;
+      margin-top: -180px;
+  }
+
+  .btn {
+	background-image: linear-gradient(to right, #00aeff 0%, #1d7cf8 100%);
+	border-radius: 40px;
+  box-sizing: border-box;
+	color: #1d7cf8;
+	display: inline-block;
+	height: 60px;
+	letter-spacing: 1px;
+    margin-left: 120px;
+    margin-top: 20px;
+    padding: 3px;   
+  text-decoration: none;
+    width: 244px;
+    font-weight: 600;
+}
+
+.btn:hover {
+	color: #fff;
+}
+
+.btn span {
+	align-items: center;
+	background: white;
+	border-radius: 40px;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	transition: background .5s ease;
+	width: 100%;
+}
+
+.btn:hover span {
+	background: transparent;
+}
+
+.parallax-desk {
+    float: left;
+    background: transparent;
+    height: 490px;
+    width: 500px;
+    margin-top: 50px;
+}
+
+.parallax2-mirror {
+    float: left;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+#desk{
+    display: inline;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+}
+
+#box-desk{
+    display: block;
+    float: right;
+    height: 360px;
+    right: 0;
+    left: 20px;
+    width: auto;
+    margin-top: 120px;
+    background-color: white;
+    position: absolute;
+    margin-left: 380px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    webkit-box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+    padding-top: 20px;
+}
+
+
+#content-apilasi-desk #text{
+    padding-left: 100px;
+    padding-right: 120px;
+    display: -webkit-inline-box;
+    display: inline-block;
+    width: auto;
+    right: 20px;
+    left: 20px;
+    text-align: justify;
+}
+
+.clear {
+    clear: both;
+}
+
+#content-why-you-us {
+    margin-top: 30px;
+    width: 100%;
+    height: 700px;
+    background-image: url(../img/gradient-blue-pink.png);
+    background-attachment: fixed;
+    background-size: cover;
+    display: inline-block;
+    height: auto;
+    top: 0;
+}
+
+.why-you-us {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .why-you-us {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+  }
+
+  .why-you-us a{
+      opacity: 0.8;
+      text-decoration: none;
+      color: rgb(221, 221, 221);
+  }
+
+  .why-you-us a:hover{
+    opacity: 1.0;
+    text-decoration: none;
+    color: white;
+    margin-top: -10px;
+    transition: all .4s ease;
+}
+
+  .why-you-us-img{
+    height: 70px;
+    width: 70px;
+    align-items: center;
+    margin: auto;
+    margin-top: 85px;
+  }
+
+.parallax-client {
+    background: transparent;
+    height: 490px;
+    width: 100%;
+}
+
+
+#client{
+    display: inline;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+}
+
+#box-client{
+    display: block;
+    height: 490px;
+    right: 0;
+    left: 0;
+    width: auto;
+    background-image: url(../img/gradient-red-yellow.png);
+    position: absolute;
+}
+
+.client-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 50px;
+  }
+  
+  .client-card {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+  }
+
+  .client-card a{
+      opacity: 0.8;
+      text-decoration: none;
+      color: rgb(221, 221, 221);
+  }
+
+  .client-card a:hover{
+    opacity: 1.0;
+    text-decoration: none;
+    color: white;
+    margin-top: -10px;
+    transition: all .4s ease;
+}
+
+  .client-img{
+    height: 70px;
+    width: auto;
+    align-items: center;
+    margin: auto;
+    margin-top: 85px;
+  }
